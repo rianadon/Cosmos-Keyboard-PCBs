@@ -12,6 +12,8 @@ It's similar in functionality to the [Amoeba PCBs](https://github.com/JKing-B16/
 
 The version here on GitHub is pared down in terms of artwork and panelization, as my goal here is to make it easy for you to produce your own functionally identical version, not copy 1:1 what I sell. It's cheaper through JLC to buy the non-panelized version anyways.
 
+To maintain compatibility with the [sockets in Cosmos](https://github.com/rianadon/Cosmos-Keyboards/blob/main/src/assets/key-mx-pcb-plum.step), make sure you manufacture these with 1.2mm thickness.
+
 Pinouts and wiring instructions are [on the Plum Twist website](https://ryanis.cool/cosmos/plum-twist/wiring).
 
 ## Lemon Microcontroller
