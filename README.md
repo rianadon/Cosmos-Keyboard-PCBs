@@ -47,9 +47,11 @@ Due to an error in routing, GP25 and GP11 got are in the wrong spot in the FPC c
 
 The reset button didn't get wired in the PCB, so to upload you need to hold down BOOT while plugging in the microcontroller.
 
-### Testing USB
+### Testing USB & LED
 
-If you want to have some fun, install Arduino and then from Arduino IDE install the Adafruit TinyUSB library. Set your board to `Generic RP2040`, set `Tools -> CPU Speed` to `120 MHz`, and upload `File -> Examples -> Adafruit TinyUSB Library -> DualRole -> Simple -> device_info`. With the serial monitor open, you should see information printed when you plug in/out devices to the secondary USB port.
+If you want to have some fun, install Arduino and then from Arduino IDE install the Adafruit TinyUSB library. Set your board to `Generic RP2040`, set `Tools -> CPU Speed` to `120 MHz`, and upload the `lemon_test` sketch in this repository.  With the serial monitor open, you should see information printed when you plug in/out devices to the secondary USB port. The RGB LED will also slowly fade through colors.
+
+Alternatively, you can upload `File -> Examples -> Adafruit TinyUSB Library -> DualRole -> Simple -> device_info`, which will only test USB. I based `lemon_test` off of this code.
 
 ### QMK examples
 
