@@ -35,21 +35,33 @@ The rightmost USB (closest to the RP2040 chip) is for programming. The leftmost 
 ### V0.0 Pinouts
 ```
 Secondary USB pins: GP0 (D+) and GP1 (D-)
-Column pins: GP10, GP6, GP9, GP4, GP8, GP5, GP3
-Row pins: GP11, GP24, GP23, GP22, GP21, GP20, GP7
+Column pins: GP11, GP24, GP23, GP22, GP21, GP20, GP7
+Row pins: GP10, GP6, GP9, GP4, GP8, GP5, GP3
 LED pin: GP25
 VIK SPI: GP12 (RX), GP13 (CS), GP13 (SCK), GP15 (TX). Uses SPI1.
 VIK I2C: GP18 (SDA0, GP19 (SCL). Uses I2C 1.
 Onboard neopixel: GP17
 ```
 
-Due to an error in routing, GP25 and GP11 got are in the wrong spot in the FPC connector (FPC1) to be compatible with the Skree PCBs. This is why they are swapped in the pinout and don't match the schematic.
+**Notes for v0.0**: Due to an error in routing, GP25 and GP11 got are in the wrong spot in the FPC connector (FPC1) to be compatible with the Skree PCBs. This is why they are swapped in the pinout and don't match the schematic. The reset button didn't get wired in the PCB, so to upload you need to hold down BOOT while plugging in the microcontroller.
 
-The reset button didn't get wired in the PCB, so to upload you need to hold down BOOT while plugging in the microcontroller.
+### V0.2 Pinouts
+
+```
+Secondary USB pins: GP0 (D+) and GP1 (D-)
+Column pins: GP25, GP24, GP23, GP22, GP21, GP20, GP7
+Row pins: GP10, GP6, GP9, GP4, GP8, GP5, GP3
+LED data pin: GP2
+LED power pin: GP11 (active low)
+VIK SPI: GP12 (RX), GP13 (CS), GP13 (SCK), GP15 (TX). Uses SPI1.
+VIK I2C: GP18 (SDA0, GP19 (SCL). Uses I2C 1.
+VIK GPIO: GP16 (1st, digital only), GP26 (2nd, has ADC)
+Onboard neopixel: GP17
+```
 
 ### Testing USB & LED
 
-If you want to have some fun, install Arduino and then from Arduino IDE install the Adafruit TinyUSB library. Set your board to `Generic RP2040`, set `Tools -> CPU Speed` to `120 MHz`, and upload the `lemon_test` sketch in this repository.  With the serial monitor open, you should see information printed when you plug in/out devices to the secondary USB port. The RGB LED will also slowly fade through colors.
+If you want to have some fun, install Arduino and then from Arduino IDE install the Adafruit TinyUSB and Adafruit NeoPixel libraries. Set your board to `Generic RP2040`, set `Tools -> CPU Speed` to `120 MHz`, and upload the `lemon_test` sketch in this repository. With the serial monitor open, you should see information printed when you plug in/out devices to the secondary USB port. The RGB LED will also slowly fade through colors.
 
 Alternatively, you can upload `File -> Examples -> Adafruit TinyUSB Library -> DualRole -> Simple -> device_info`, which will only test USB. I based `lemon_test` off of this code.
 
