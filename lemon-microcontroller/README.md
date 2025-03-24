@@ -15,7 +15,7 @@ Onboard neopixel: GP17
 
 **Notes for v0.0**: Due to an error in routing, GP25 and GP11 got are in the wrong spot in the FPC connector (FPC1) to be compatible with the Skree PCBs. This is why they are swapped in the pinout and don't match the schematic. The reset button didn't get wired in the PCB, so to upload you need to hold down BOOT while plugging in the microcontroller.
 
-### V0.2/V0.3 Pinouts
+### V0.2 Pinouts
 
 ```
 Secondary USB pins: GP0 (D+) and GP1 (D-)
@@ -29,15 +29,27 @@ VIK GPIO: GP16 (1st, digital only), GP26 (2nd, has ADC)
 Onboard neopixel: GP17
 ```
 
+### V0.3 Pinouts
+
+```
+Secondary USB pins: GP0 (D+) and GP1 (D-)
+Column pins: GP25, GP24, GP23, GP22, GP21, GP20, GP7
+Row pins: GP10, GP6, GP9, GP4, GP8, GP5, GP3
+LED data pin: GP2
+LED power pin: GP11 (active low)
+VIK SPI: GP12 (RX), GP13 (CS), GP13 (SCK), GP15 (TX). Uses SPI1.
+VIK I2C: GP18 (SDA0, GP19 (SCL). Uses I2C 1.
+VIK GPIO: GP26, GP27 (both have ADC)
+Onboard neopixel: GP17
+```
+
 In V0.3, the LED data pin (5V logic) is broken out as a pad in place of GP2 (3.3V logic).
 
 ## VIK Information
 
 *TODO: Post card here when certified*
 
-Voltage, SPI & I2C should be fully VIK-compatible. RGB can be used on one of the flex PCB connector, through-hole pad, or VIK module, but not multiple at the same time. If you are using RGB through the VIK connector, solder the "RGB->VIK" jumper.
-
-GPIO 1 on the VIK connector is data-only, so that I can bring more analog-capable pins to the through-hole pads.
+Voltage, SPI & I2C should be fully VIK-compatible. RGB can be used on one of the flex PCB connector, through-hole pad, or VIK module, but not multiple at the same time. This is a limitation of the flex PCB not having an RGB return pin. If you are using RGB through the VIK connector, solder the "RGB->VIK" jumper.
 
 ## Testing USB & LED
 
