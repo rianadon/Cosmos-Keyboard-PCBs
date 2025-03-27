@@ -2,7 +2,7 @@
 
 ## Pinouts
 
-TODO
+![Pinout picture](./lemon-pcb-wireless-pinout.png)
 
 ## VIK Information
 

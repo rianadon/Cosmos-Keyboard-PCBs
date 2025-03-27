@@ -31,6 +31,8 @@ Onboard neopixel: GP17
 
 ### V0.3 Pinouts
 
+![Pinout image](./lemon-pcb-pinout.png)
+
 ```
 Secondary USB pins: GP0 (D+) and GP1 (D-)
 Column pins: GP25, GP24, GP23, GP22, GP21, GP20, GP7
