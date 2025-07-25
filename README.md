@@ -18,7 +18,7 @@ Pinouts and wiring instructions are [on the Plum Twist website](https://ryanis.c
 
 <img src="lemon-microcontroller/lemon-microcontroller.png" align="left" width="120" height="128" />
 
-A work-in-progress RP2040-based microcontroller with 2 spec-compliant USB ports, a VIK connector, and FPC connectors for connecting keys.
+An RP2040-based microcontroller with 2 spec-compliant USB ports, a VIK connector, and FPC connectors for connecting keys. [[Main Website](https://ryanis.cool/cosmos/lemon/)] [[Buy](https://cosmos-store.ryanis.cool/collections/lemon)]
 
 The rightmost USB (closest to the RP2040 chip) is for programming. The leftmost PCB (by the SPI flash) cannot be used for programming. See the [subfolder's README](./lemon-microcontroller/README.md) for pinouts, QMK examples, and more.
 
@@ -26,7 +26,7 @@ The rightmost USB (closest to the RP2040 chip) is for programming. The leftmost 
 
 <img src="lemon-wireless-uc/lemon-wireless-uc.png" align="left" width="120" height="145" />
 
-A work-in-progress NRF52840-based microcontroller with a USB port, battery connector & charger, on/off switch, a VIK connector, and FPC connectors for connecting keys.
+An NRF52840-based microcontroller with a USB port, battery connector & charger, on/off switch, a VIK connector, and FPC connectors for connecting keys. [[Main Website](https://ryanis.cool/cosmos/lemon/)] [[Buy](https://cosmos-store.ryanis.cool/collections/lemon)]
 
 Because it uses a shift register to drive columns, this board is capable of driving large keyboards even with external modules and lighting. See the [subfolder's README](./lemon-wireless-uc/README.md) for more information.
 

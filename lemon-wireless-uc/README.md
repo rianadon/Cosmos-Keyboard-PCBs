@@ -1,8 +1,16 @@
 # Lemon Wireless Microcontroller
 
+[Documentation is on the Cosmos Docs.](https://ryanis.cool/cosmos/docs/pcbs/lemon-wireless/)
+
 ## Pinouts
 
-![Pinout picture](./lemon-pcb-wireless-pinout.png)
+### V0.2 Pinout
+
+[Click for pinout picture](./lemon-pcb-wireless-pinout-v02.png)
+
+### V0.3 Pinout
+
+![Pinout picture](./lemon-pcb-wireless-pinout-v03.png)
 
 ## VIK Information
 

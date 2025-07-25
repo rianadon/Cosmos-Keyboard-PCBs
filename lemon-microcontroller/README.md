@@ -1,5 +1,7 @@
 # Lemon Microcontroller
 
+[Documentation is on the Cosmos Docs.](https://ryanis.cool/cosmos/docs/pcbs/lemon-wired/)
+
 ## Pinouts
 
 ### V0.0 Pinouts
@@ -31,7 +33,7 @@ Onboard neopixel: GP17
 
 ### V0.3 Pinouts
 
-![Pinout image](./lemon-pcb-pinout.png)
+[Click for pinout image](./lemon-pcb-pinout-v03.png)
 
 ```
 Secondary USB pins: GP0 (D+) and GP1 (D-)
@@ -47,6 +49,24 @@ Onboard neopixel: GP17
 
 In V0.3, the LED data pin (5V logic) is broken out as a pad in place of GP2 (3.3V logic).
 
+### V0.4 Pinouts
+
+![Pinout image](./lemon-pcb-pinout-v04.png)
+
+```
+Secondary USB pins: GP0 (D+) and GP1 (D-)
+Column pins: GP25, GP24, GP23, GP22, GP21, GP20, GP10
+Row pins: GP3, GP4, GP5, GP6, GP7, GP8, GP9
+LED data pin: GP2
+LED power pin: GP11 (active low)
+VIK SPI: GP12 (RX), GP13 (CS), GP13 (SCK), GP15 (TX). Uses SPI1.
+VIK I2C: GP18 (SDA0, GP19 (SCL). Uses I2C 1.
+VIK GPIO: GP26, GP27 (both have ADC)
+Onboard neopixel: GP17
+```
+
+I rearranged the row/column pin order in this one to help with handwiring.
+
 ## VIK Information
 
 *TODO: Post card here when certified*
@@ -61,11 +81,13 @@ Alternatively, you can upload `File -> Examples -> Adafruit TinyUSB Library -> D
 
 ## QMK examples
 
-I've uploaded a simple QMK example with the correct wiring for the microcontroller. It uses the full 7x7 matrix, so it's great for testing that everything works. I haven't gotten to making the split work correctly though. For that you need to reference https://github.com/sekigon-gonnoc/qmk_firmware/tree/rp2040/keyboards/pico_pico_usb.
+This is out of date. Refer to the documentation on the Cosmos site for the latest on firmware.
 
-To use it copy `lemon-microcontroller/lemon7x7-qmk-v0` to `<qmk_firmware>/keyboards/cosmos/lemon7x7` then run `qmk flash -j4 -kb cosmos/lemon7x7 -km via -bl uf2-split-right`.
+~~I've uploaded a simple QMK example with the correct wiring for the microcontroller. It uses the full 7x7 matrix, so it's great for testing that everything works. I haven't gotten to making the split work correctly though. For that you need to reference https://github.com/sekigon-gonnoc/qmk_firmware/tree/rp2040/keyboards/pico_pico_usb.~~
 
-If you received your Lemon from me, it's probably already running this program.
+~~To use it copy `lemon-microcontroller/lemon7x7-qmk-v0` to `<qmk_firmware>/keyboards/cosmos/lemon7x7` then run `qmk flash -j4 -kb cosmos/lemon7x7 -km via -bl uf2-split-right`.~~
+
+~~If you received your Lemon from me, it's probably already running this program.~~
 
 ## License
 
