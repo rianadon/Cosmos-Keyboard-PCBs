@@ -69,7 +69,17 @@ I rearranged the row/column pin order in this one to help with handwiring.
 
 ## VIK Information
 
-*TODO: Post card here when certified*
+| Category                 | Classification          | Response           |
+| -----------------------  | ----------------------- | ------------------ |
+| FPC connector            | Required                | :heavy_check_mark: |
+| Breakout pins            | Recommended             | :heavy_check_mark: |
+| Supplies: SPI            | Required                | :heavy_check_mark: |
+| Supplies: I2C            | Required                | :heavy_check_mark: |
+| I2C on main PCB          | Discouraged             | no                 |
+| I2C pull ups             | Informative             | N/A                |
+| Supplies: RGB            | Required                | :heavy_check_mark: |
+| Supplies: Extra GPIO 1   | Required                | Analog/Digital     |
+| Supplies: Extra GPIO 2   | Required                | Analog/Digital     |
 
 Voltage, SPI & I2C should be fully VIK-compatible. RGB can be used on one of the flex PCB connector, through-hole pad, or VIK module, but not multiple at the same time. This is a limitation of the flex PCB not having an RGB return pin. If you are using RGB through the VIK connector, solder the "RGB->VIK" jumper.
 
