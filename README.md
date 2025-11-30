@@ -30,6 +30,10 @@ An NRF52840-based microcontroller with a USB port, battery connector & charger, 
 
 Because it uses a shift register to drive columns, this board is capable of driving large keyboards even with external modules and lighting. See the [subfolder's README](./lemon-wireless-uc/README.md) for more information.
 
+## Cactus Connector
+
+A splitter for VIK cables. [[Docs](https://ryanis.cool/cosmos/docs/pcbs/cactus-connector)] [[Buy](https://cosmos-store.ryanis.cool/products/cactus-connector-for-vik)]
+
 ## Licensing
 
 I license the subprojects differently, so refer to each subdirectory for licensing information.
