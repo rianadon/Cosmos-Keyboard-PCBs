@@ -16,11 +16,11 @@ Pinouts and wiring instructions are [on the Plum Twist website](https://ryanis.c
 
 ## Lemon Microcontroller
 
-<img src="lemon-microcontroller/lemon-microcontroller.png" align="left" width="120" height="128" />
+<img src="lemon-wired/lemon-wired.png" align="left" width="120" height="128" />
 
 An RP2040-based microcontroller with 2 spec-compliant USB ports, a VIK connector, and FPC connectors for connecting keys. [[Main Website](https://ryanis.cool/cosmos/lemon/)] [[Buy](https://cosmos-store.ryanis.cool/collections/lemon)]
 
-The rightmost USB (closest to the RP2040 chip) is for programming. The leftmost PCB (by the SPI flash) cannot be used for programming. See the [subfolder's README](./lemon-microcontroller/README.md) for pinouts, QMK examples, and more.
+The rightmost USB (closest to the RP2040 chip) is for programming. The leftmost PCB (by the SPI flash) cannot be used for programming. See the [subfolder's README](./lemon-wired/README.md) for pinouts, QMK examples, and more.
 
 ## Lemon Wireless Microcontroller
 
