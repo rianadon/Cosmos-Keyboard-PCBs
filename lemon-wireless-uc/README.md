@@ -10,7 +10,11 @@
 
 ### V0.3 Pinout
 
-![Pinout picture](./lemon-pcb-wireless-pinout-v03.png)
+[Click for pinout picture](./lemon-pcb-wireless-pinout-v03.png)
+
+### V0.4 Pinout
+
+![Pinout picture](./lemon-pcb-wireless-pinout-v04.png)
 
 ## VIK Information
 
